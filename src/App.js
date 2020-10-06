@@ -11,11 +11,9 @@ Amplify.configure(aws_exports);
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Authenticator hideDefault={true} amplifyConfig={aws_exports}>
-          <AuthWrapper />
-        </Authenticator>
-      </header>
+      <Authenticator hideDefault={true} amplifyConfig={aws_exports}>
+        <AuthWrapper />
+      </Authenticator>
     </div>
   );
 }

@@ -17,7 +17,7 @@ class AuthWrapper extends Component {
 
   render() {
     return (
-      <div className="App-header logged-out">
+      <div>
         <CustomSignIn
           authState={this.props.authState}
           updateUsername={this.updateUsername}
